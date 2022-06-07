@@ -16,5 +16,20 @@ namespace Contact_Tracing_App__Meria
         {
             InitializeComponent();
         }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titleHeader_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
