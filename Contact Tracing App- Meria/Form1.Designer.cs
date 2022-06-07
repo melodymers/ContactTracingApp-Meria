@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing_App__Meria
 {
-    partial class Form1
+    partial class SignUp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
+            this.SuspendLayout();
+            // 
+            // SignUp
+            // 
+            this.AccessibleDescription = "Sign Up Window";
+            this.AccessibleName = "HomePage";
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(682, 679);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sign Up!";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
