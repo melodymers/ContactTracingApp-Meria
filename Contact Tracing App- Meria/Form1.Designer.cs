@@ -63,6 +63,7 @@
             this.citizenBtn.Size = new System.Drawing.Size(380, 111);
             this.citizenBtn.TabIndex = 2;
             this.citizenBtn.UseVisualStyleBackColor = false;
+            this.citizenBtn.Click += new System.EventHandler(this.citizenBtn_Click);
             // 
             // merchantBtn
             // 
@@ -78,6 +79,7 @@
             this.merchantBtn.Size = new System.Drawing.Size(380, 111);
             this.merchantBtn.TabIndex = 3;
             this.merchantBtn.UseVisualStyleBackColor = false;
+            this.merchantBtn.Click += new System.EventHandler(this.merchantBtn_Click);
             // 
             // SignUp
             // 

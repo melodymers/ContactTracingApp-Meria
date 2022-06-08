@@ -21,15 +21,23 @@ namespace Contact_Tracing_App__Meria
         {
 
         }
-
-        private void signUpBtn_Click(object sender, EventArgs e)
+        private void titleHeader_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void titleHeader_Click(object sender, EventArgs e)
+        private void citizenBtn_Click(object sender, EventArgs e)
         {
+            var Form2 = new Form2();
+            Form2.Show();
+            this.Hide();
+        }
 
+        private void merchantBtn_Click(object sender, EventArgs e)
+        {
+            var Form2 = new Form2();
+            Form2.Show();
+            this.Hide();
         }
     }
 }

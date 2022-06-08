@@ -9,3 +9,4 @@ C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Mer
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.CoreCompileInputs.cache
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.exe
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.pdb
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.Form2.resources
