@@ -13,6 +13,8 @@ namespace Contact_Tracing_App__Meria
 {
     public partial class FillOutForm : Form
     {
+        private object txtGenerateBtn;
+
         public FillOutForm()
         {
             InitializeComponent();
@@ -25,13 +27,18 @@ namespace Contact_Tracing_App__Meria
 
         private void GenerateBtn_Click(object sender, EventArgs e)
         {
-            StreamWriter doc = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP.txt", true);
-            doc.WriteLine("FULL NAME: " + nameTxtBx.Text);
-            doc.WriteLine("AGE: " + ageTxtBx.Text);
-            doc.WriteLine("GENDER: " + genderTxtBx.Text);
-            doc.WriteLine("ADDRESS: " + AddTxtBx.Text);
-
-            doc.Close();
+            StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
+            dox.WriteLine("FULL NAME: " + nameTxtBx.Text);
+            dox.WriteLine("AGE: " + ageTxtBx.Text);
+            dox.WriteLine("GENDER: " + genderTxtBx.Text);
+            dox.WriteLine("ADDRESS: " + AddTxtBx.Text);
+            dox.WriteLine("BIRTH DATE: " + bdayTxtBx.Text);
+            dox.WriteLine("TEMPERATURE: " + tempTxtBx.Text);
+            dox.WriteLine("TIME IN: " + inTxtBx.Text);
+            dox.WriteLine("TIME OUT: " + outTxtBx.Text);
+            dox.WriteLine("ARE YOU VACCINATED? " + vaxTxtBx.Text);
+            dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
+            dox.Close();
         }
         private void ageTxtBx_TextChanged(object sender, EventArgs e)
         {
