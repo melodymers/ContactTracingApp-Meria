@@ -10,14 +10,29 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_App__Meria
 {
-    public partial class Form2 : Form
+    public partial class FillOutForm : Form
     {
-        public Form2()
+        public FillOutForm()
         {
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenerateBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ageTxtBx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

@@ -28,14 +28,14 @@ namespace Contact_Tracing_App__Meria
 
         private void citizenBtn_Click(object sender, EventArgs e)
         {
-            var Form2 = new Form2();
+            var Form2 = new FillOutForm();
             Form2.Show();
             this.Hide();
         }
 
         private void merchantBtn_Click(object sender, EventArgs e)
         {
-            var Form2 = new Form2();
+            var Form2 = new FillOutForm();
             Form2.Show();
             this.Hide();
         }

@@ -51,6 +51,7 @@
             // 
             // citizenBtn
             // 
+            this.citizenBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.citizenBtn.BackColor = System.Drawing.Color.Transparent;
             this.citizenBtn.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.shiiish1;
             this.citizenBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -100,6 +101,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "SignUp";
             this.Text = "Sign Up!";
             this.Load += new System.EventHandler(this.SignUp_Load);
