@@ -49,10 +49,30 @@ namespace Contact_Tracing_App__Meria
                 tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
             }
         }
-
-        private void firstColumn_Click(object sender, EventArgs e)
+        private void AgeTxtBx_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+            }
+        }
+        private void inTxtBx_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+            }
+        }
 
+        private void outTxtBx_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+            }
         }
     }
 }

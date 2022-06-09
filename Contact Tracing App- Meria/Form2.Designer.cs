@@ -100,7 +100,6 @@
             this.firstColumn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.firstColumn.TabIndex = 3;
             this.firstColumn.TabStop = false;
-            this.firstColumn.Click += new System.EventHandler(this.firstColumn_Click);
             // 
             // nameTxtBx
             // 
@@ -145,6 +144,7 @@
             this.AgeTxtBx.Name = "AgeTxtBx";
             this.AgeTxtBx.Size = new System.Drawing.Size(206, 33);
             this.AgeTxtBx.TabIndex = 10;
+            this.AgeTxtBx.TextChanged += new System.EventHandler(this.AgeTxtBx_TextChanged);
             // 
             // genderTxtBx
             // 
@@ -191,6 +191,7 @@
             this.outTxtBx.Name = "outTxtBx";
             this.outTxtBx.Size = new System.Drawing.Size(160, 33);
             this.outTxtBx.TabIndex = 13;
+            this.outTxtBx.TextChanged += new System.EventHandler(this.outTxtBx_TextChanged);
             // 
             // inTxtBx
             // 
@@ -202,6 +203,7 @@
             this.inTxtBx.Name = "inTxtBx";
             this.inTxtBx.Size = new System.Drawing.Size(171, 36);
             this.inTxtBx.TabIndex = 14;
+            this.inTxtBx.TextChanged += new System.EventHandler(this.inTxtBx_TextChanged);
             // 
             // vaxTxtBx
             // 
