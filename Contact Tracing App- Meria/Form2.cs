@@ -40,7 +40,10 @@ namespace Contact_Tracing_App__Meria
             dox.WriteLine("TIME OUT: " + outTxtBx.Text);
             dox.WriteLine("ARE YOU VACCINATED? " + vaxTxtBx.Text);
             dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
+            dox.WriteLine("");
             dox.Close();
+            if (nameTxtBx.Text == "" || AgeTxtBx.Text == ""|| genderTxtBx.Text == "" || AddTxtBx.Text == "" || bdayTxtBx.Text == "" || tempTxtBx.Text == "" || inTxtBx.Text == "" || AgeTxtBx.Text == "" || outTxtBx.Text == "" || vaxTxtBx.Text == "" || bstrTxtBx.Text == "");
+            MessageBox.Show("Please complete the form");
         }
         private void tempTxtBx_TextChanged(object sender, EventArgs e)
         {
