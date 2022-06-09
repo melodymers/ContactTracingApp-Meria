@@ -116,7 +116,7 @@
             // 
             this.AddTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddTxtBx.ForeColor = System.Drawing.Color.Transparent;
+            this.AddTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AddTxtBx.Location = new System.Drawing.Point(114, 502);
             this.AddTxtBx.Multiline = true;
             this.AddTxtBx.Name = "AddTxtBx";
@@ -127,7 +127,7 @@
             // 
             this.bdayTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bdayTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bdayTxtBx.ForeColor = System.Drawing.Color.Transparent;
+            this.bdayTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bdayTxtBx.Location = new System.Drawing.Point(141, 574);
             this.bdayTxtBx.Multiline = true;
             this.bdayTxtBx.Name = "bdayTxtBx";
@@ -150,7 +150,7 @@
             // 
             this.genderTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.genderTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderTxtBx.ForeColor = System.Drawing.Color.Transparent;
+            this.genderTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.genderTxtBx.Location = new System.Drawing.Point(124, 425);
             this.genderTxtBx.Multiline = true;
             this.genderTxtBx.Name = "genderTxtBx";
@@ -174,7 +174,7 @@
             this.tempTxtBx.BackColor = System.Drawing.Color.White;
             this.tempTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tempTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tempTxtBx.ForeColor = System.Drawing.Color.Black;
+            this.tempTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tempTxtBx.Location = new System.Drawing.Point(470, 274);
             this.tempTxtBx.Multiline = true;
             this.tempTxtBx.Name = "tempTxtBx";
@@ -185,7 +185,7 @@
             // 
             this.outTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.outTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outTxtBx.ForeColor = System.Drawing.Color.Black;
+            this.outTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.outTxtBx.Location = new System.Drawing.Point(427, 425);
             this.outTxtBx.Multiline = true;
             this.outTxtBx.Name = "outTxtBx";
@@ -196,7 +196,7 @@
             // 
             this.inTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inTxtBx.ForeColor = System.Drawing.Color.Black;
+            this.inTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.inTxtBx.Location = new System.Drawing.Point(416, 353);
             this.inTxtBx.Multiline = true;
             this.inTxtBx.Name = "inTxtBx";
@@ -207,7 +207,7 @@
             // 
             this.vaxTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vaxTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vaxTxtBx.ForeColor = System.Drawing.Color.Black;
+            this.vaxTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.vaxTxtBx.Location = new System.Drawing.Point(488, 494);
             this.vaxTxtBx.Multiline = true;
             this.vaxTxtBx.Name = "vaxTxtBx";
@@ -218,7 +218,7 @@
             // 
             this.bstrTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bstrTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bstrTxtBx.ForeColor = System.Drawing.Color.Black;
+            this.bstrTxtBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bstrTxtBx.Location = new System.Drawing.Point(503, 574);
             this.bstrTxtBx.Multiline = true;
             this.bstrTxtBx.Name = "bstrTxtBx";
