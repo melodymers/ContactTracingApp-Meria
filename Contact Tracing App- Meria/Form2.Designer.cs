@@ -35,7 +35,7 @@
             this.nameTxtBx = new System.Windows.Forms.TextBox();
             this.AddTxtBx = new System.Windows.Forms.TextBox();
             this.bdayTxtBx = new System.Windows.Forms.TextBox();
-            this.ageTxtBx = new System.Windows.Forms.TextBox();
+            this.AgeTxtBx = new System.Windows.Forms.TextBox();
             this.genderTxtBx = new System.Windows.Forms.TextBox();
             this.nextColumn = new System.Windows.Forms.PictureBox();
             this.tempTxtBx = new System.Windows.Forms.TextBox();
@@ -100,6 +100,7 @@
             this.firstColumn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.firstColumn.TabIndex = 3;
             this.firstColumn.TabStop = false;
+            this.firstColumn.Click += new System.EventHandler(this.firstColumn_Click);
             // 
             // nameTxtBx
             // 
@@ -134,17 +135,16 @@
             this.bdayTxtBx.Size = new System.Drawing.Size(142, 33);
             this.bdayTxtBx.TabIndex = 8;
             // 
-            // ageTxtBx
+            // AgeTxtBx
             // 
-            this.ageTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ageTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ageTxtBx.ForeColor = System.Drawing.Color.Black;
-            this.ageTxtBx.Location = new System.Drawing.Point(77, 356);
-            this.ageTxtBx.Multiline = true;
-            this.ageTxtBx.Name = "ageTxtBx";
-            this.ageTxtBx.Size = new System.Drawing.Size(206, 33);
-            this.ageTxtBx.TabIndex = 10;
-            this.ageTxtBx.TextChanged += new System.EventHandler(this.ageTxtBx_TextChanged);
+            this.AgeTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AgeTxtBx.Font = new System.Drawing.Font("Gadugi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeTxtBx.ForeColor = System.Drawing.Color.Black;
+            this.AgeTxtBx.Location = new System.Drawing.Point(77, 356);
+            this.AgeTxtBx.Multiline = true;
+            this.AgeTxtBx.Name = "AgeTxtBx";
+            this.AgeTxtBx.Size = new System.Drawing.Size(206, 33);
+            this.AgeTxtBx.TabIndex = 10;
             // 
             // genderTxtBx
             // 
@@ -167,7 +167,6 @@
             this.nextColumn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.nextColumn.TabIndex = 12;
             this.nextColumn.TabStop = false;
-            this.nextColumn.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // tempTxtBx
             // 
@@ -180,6 +179,7 @@
             this.tempTxtBx.Name = "tempTxtBx";
             this.tempTxtBx.Size = new System.Drawing.Size(117, 34);
             this.tempTxtBx.TabIndex = 13;
+            this.tempTxtBx.TextChanged += new System.EventHandler(this.tempTxtBx_TextChanged);
             // 
             // outTxtBx
             // 
@@ -241,7 +241,7 @@
             this.Controls.Add(this.tempTxtBx);
             this.Controls.Add(this.nextColumn);
             this.Controls.Add(this.genderTxtBx);
-            this.Controls.Add(this.ageTxtBx);
+            this.Controls.Add(this.AgeTxtBx);
             this.Controls.Add(this.bdayTxtBx);
             this.Controls.Add(this.AddTxtBx);
             this.Controls.Add(this.GenerateBtn);
@@ -273,7 +273,7 @@
         private System.Windows.Forms.TextBox nameTxtBx;
         private System.Windows.Forms.TextBox AddTxtBx;
         private System.Windows.Forms.TextBox bdayTxtBx;
-        private System.Windows.Forms.TextBox ageTxtBx;
+        private System.Windows.Forms.TextBox AgeTxtBx;
         private System.Windows.Forms.TextBox genderTxtBx;
         private System.Windows.Forms.PictureBox nextColumn;
         private System.Windows.Forms.TextBox tempTxtBx;

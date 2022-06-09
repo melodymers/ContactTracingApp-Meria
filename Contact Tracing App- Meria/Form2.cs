@@ -14,6 +14,7 @@ namespace Contact_Tracing_App__Meria
     public partial class FillOutForm : Form
     {
         private object txtGenerateBtn;
+        private object textVar;
 
         public FillOutForm()
         {
@@ -22,14 +23,14 @@ namespace Contact_Tracing_App__Meria
 
         private void Form2_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void GenerateBtn_Click(object sender, EventArgs e)
         {
             StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
             dox.WriteLine("FULL NAME: " + nameTxtBx.Text);
-            dox.WriteLine("AGE: " + ageTxtBx.Text);
+            dox.WriteLine("AGE: " + AgeTxtBx.Text);
             dox.WriteLine("GENDER: " + genderTxtBx.Text);
             dox.WriteLine("ADDRESS: " + AddTxtBx.Text);
             dox.WriteLine("BIRTH DATE: " + bdayTxtBx.Text);
@@ -40,14 +41,20 @@ namespace Contact_Tracing_App__Meria
             dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
             dox.Close();
         }
-        private void ageTxtBx_TextChanged(object sender, EventArgs e)
+        private void tempTxtBx_TextChanged(object sender, EventArgs e)
         {
-            
+            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+            }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void firstColumn_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
+
+        
