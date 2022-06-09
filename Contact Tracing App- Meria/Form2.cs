@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,7 +44,7 @@ namespace Contact_Tracing_App__Meria
         }
         private void tempTxtBx_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9:.]"))
             {
                 MessageBox.Show("Please enter only numbers.");
                 tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
@@ -51,27 +52,27 @@ namespace Contact_Tracing_App__Meria
         }
         private void AgeTxtBx_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(AgeTxtBx.Text, "[^0-9:.]"))
             {
                 MessageBox.Show("Please enter only numbers.");
-                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+                AgeTxtBx.Text = AgeTxtBx.Text.Remove(AgeTxtBx.Text.Length - 1);
             }
         }
         private void inTxtBx_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(inTxtBx.Text, "[^0-9:.]"))
             {
                 MessageBox.Show("Please enter only numbers.");
-                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+                inTxtBx.Text = inTxtBx.Text.Remove(inTxtBx.Text.Length - 1);
             }
         }
 
         private void outTxtBx_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(tempTxtBx.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(outTxtBx.Text, "[^0-9:.]"))
             {
                 MessageBox.Show("Please enter only numbers.");
-                tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
+                outTxtBx.Text = outTxtBx.Text.Remove(outTxtBx.Text.Length - 1);
             }
         }
     }
