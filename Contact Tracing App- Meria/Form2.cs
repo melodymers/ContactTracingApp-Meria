@@ -14,9 +14,6 @@ namespace Contact_Tracing_App__Meria
 {
     public partial class FillOutForm : Form
     {
-        private object txtGenerateBtn;
-        private object textVar;
-
         public FillOutForm()
         {
             InitializeComponent();
@@ -26,24 +23,30 @@ namespace Contact_Tracing_App__Meria
         {
 
         }
-
-        private void GenerateBtn_Click(object sender, EventArgs e)
+        private void GenerateBtn_Click_1(object sender, EventArgs e)
         {
-            StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
-            dox.WriteLine("FULL NAME: " + nameTxtBx.Text);
-            dox.WriteLine("AGE: " + AgeTxtBx.Text);
-            dox.WriteLine("GENDER: " + genderTxtBx.Text);
-            dox.WriteLine("ADDRESS: " + AddTxtBx.Text);
-            dox.WriteLine("BIRTH DATE: " + bdayTxtBx.Text);
-            dox.WriteLine("TEMPERATURE: " + tempTxtBx.Text);
-            dox.WriteLine("TIME IN: " + inTxtBx.Text);
-            dox.WriteLine("TIME OUT: " + outTxtBx.Text);
-            dox.WriteLine("ARE YOU VACCINATED? " + vaxTxtBx.Text);
-            dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
-            dox.WriteLine("");
-            dox.Close();
-            if (nameTxtBx.Text == "" || AgeTxtBx.Text == ""|| genderTxtBx.Text == "" || AddTxtBx.Text == "" || bdayTxtBx.Text == "" || tempTxtBx.Text == "" || inTxtBx.Text == "" || AgeTxtBx.Text == "" || outTxtBx.Text == "" || vaxTxtBx.Text == "" || bstrTxtBx.Text == "");
-            MessageBox.Show("Please complete the form");
+        if (nameTxtBx.Text == "" || AgeTxtBx.Text == "" || genderTxtBx.Text =="" || AddTxtBx.Text=="" || bdayTxtBx.Text=="" || tempTxtBx.Text=="" || inTxtBx.Text=="" || outTxtBx.Text=="" || vaxTxtBx.Text=="" || bstrTxtBx.Text=="")
+            {
+                MessageBox.Show("Please complete the form");
+            }
+        else
+            {
+                StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
+                dox.WriteLine("FULL NAME: " + nameTxtBx.Text);
+                dox.WriteLine("AGE: " + AgeTxtBx.Text);
+                dox.WriteLine("GENDER: " + genderTxtBx.Text);
+                dox.WriteLine("ADDRESS: " + AddTxtBx.Text);
+                dox.WriteLine("BIRTH DATE: " + bdayTxtBx.Text);
+                dox.WriteLine("TEMPERATURE: " + tempTxtBx.Text);
+                dox.WriteLine("TIME IN: " + inTxtBx.Text);
+                dox.WriteLine("TIME OUT: " + outTxtBx.Text);
+                dox.WriteLine("ARE YOU VACCINATED? " + vaxTxtBx.Text);
+                dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
+                dox.Close();
+                MessageBox.Show("THANK YOU FOR YOUR TIME");
+                Application.Exit();
+                MessageBox.Show("");
+            }
         }
         private void tempTxtBx_TextChanged(object sender, EventArgs e)
         {
@@ -52,7 +55,7 @@ namespace Contact_Tracing_App__Meria
                 MessageBox.Show("Please enter only numbers.");
                 tempTxtBx.Text = tempTxtBx.Text.Remove(tempTxtBx.Text.Length - 1);
             }
-        }
+          }
         private void AgeTxtBx_TextChanged(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(AgeTxtBx.Text, "[^0-9:.]"))
@@ -77,6 +80,26 @@ namespace Contact_Tracing_App__Meria
                 MessageBox.Show("Please enter only numbers.");
                 outTxtBx.Text = outTxtBx.Text.Remove(outTxtBx.Text.Length - 1);
             }
+        }
+        private void nameTxtBx_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void genderTxtBx_TextChanged(object sender, EventArgs e)
+        {
+        }
+        private void AddTxtBx_TextChanged(object sender, EventArgs e)
+        {
+        }
+        private void bdayTxtBx_TextChanged(object sender, EventArgs e)
+        {
+        }
+        private void vaxTxtBx_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void bstrTxtBx_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

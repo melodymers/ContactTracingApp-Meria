@@ -61,7 +61,7 @@
             this.GenerateBtn.Size = new System.Drawing.Size(218, 77);
             this.GenerateBtn.TabIndex = 0;
             this.GenerateBtn.UseVisualStyleBackColor = false;
-            this.GenerateBtn.Click += new System.EventHandler(this.GenerateBtn_Click);
+            this.GenerateBtn.Click += new System.EventHandler(this.GenerateBtn_Click_1);
             // 
             // pictureBox1
             // 
@@ -111,6 +111,7 @@
             this.nameTxtBx.Name = "nameTxtBx";
             this.nameTxtBx.Size = new System.Drawing.Size(159, 33);
             this.nameTxtBx.TabIndex = 4;
+            this.nameTxtBx.TextChanged += new System.EventHandler(this.nameTxtBx_TextChanged);
             // 
             // AddTxtBx
             // 
@@ -122,6 +123,7 @@
             this.AddTxtBx.Name = "AddTxtBx";
             this.AddTxtBx.Size = new System.Drawing.Size(169, 33);
             this.AddTxtBx.TabIndex = 7;
+            this.AddTxtBx.TextChanged += new System.EventHandler(this.AddTxtBx_TextChanged);
             // 
             // bdayTxtBx
             // 
@@ -133,6 +135,7 @@
             this.bdayTxtBx.Name = "bdayTxtBx";
             this.bdayTxtBx.Size = new System.Drawing.Size(142, 33);
             this.bdayTxtBx.TabIndex = 8;
+            this.bdayTxtBx.TextChanged += new System.EventHandler(this.bdayTxtBx_TextChanged);
             // 
             // AgeTxtBx
             // 
@@ -156,6 +159,7 @@
             this.genderTxtBx.Name = "genderTxtBx";
             this.genderTxtBx.Size = new System.Drawing.Size(159, 33);
             this.genderTxtBx.TabIndex = 11;
+            this.genderTxtBx.TextChanged += new System.EventHandler(this.genderTxtBx_TextChanged);
             // 
             // nextColumn
             // 
@@ -215,6 +219,7 @@
             this.vaxTxtBx.Name = "vaxTxtBx";
             this.vaxTxtBx.Size = new System.Drawing.Size(99, 41);
             this.vaxTxtBx.TabIndex = 15;
+            this.vaxTxtBx.TextChanged += new System.EventHandler(this.vaxTxtBx_TextChanged);
             // 
             // bstrTxtBx
             // 
@@ -226,6 +231,7 @@
             this.bstrTxtBx.Name = "bstrTxtBx";
             this.bstrTxtBx.Size = new System.Drawing.Size(84, 33);
             this.bstrTxtBx.TabIndex = 16;
+            this.bstrTxtBx.TextChanged += new System.EventHandler(this.bstrTxtBx_TextChanged);
             // 
             // FillOutForm
             // 
