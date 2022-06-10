@@ -27,7 +27,7 @@ namespace Contact_Tracing_App__Meria
         {
         if (nameTxtBx.Text == "" || AgeTxtBx.Text == "" || genderTxtBx.Text =="" || AddTxtBx.Text=="" || bdayTxtBx.Text=="" || tempTxtBx.Text=="" || inTxtBx.Text=="" || outTxtBx.Text=="" || vaxTxtBx.Text=="" || bstrTxtBx.Text=="")
             {
-                MessageBox.Show("Please complete the form");
+                MessageBox.Show("Please complete the form", "REQUIRED");
             }
         else
             {
@@ -43,7 +43,7 @@ namespace Contact_Tracing_App__Meria
                 dox.WriteLine("ARE YOU VACCINATED? " + vaxTxtBx.Text);
                 dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
                 dox.Close();
-                MessageBox.Show("THANK YOU FOR YOUR TIME");
+                MessageBox.Show("THANK YOU FOR YOUR TIME", "COMPLETED");
                 Application.Exit();
                 MessageBox.Show("");
             }
