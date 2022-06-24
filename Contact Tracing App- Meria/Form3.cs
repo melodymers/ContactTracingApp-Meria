@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_App__Meria
 {
-    public partial class Form3 : Form
+    public partial class adminDesk : Form
     {
-        public Form3()
+        public adminDesk()
         {
             InitializeComponent();
         }

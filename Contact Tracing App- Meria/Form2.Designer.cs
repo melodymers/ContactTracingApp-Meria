@@ -43,8 +43,8 @@
             this.inTxtBx = new System.Windows.Forms.TextBox();
             this.vaxTxtBx = new System.Windows.Forms.TextBox();
             this.bstrTxtBx = new System.Windows.Forms.TextBox();
-            this.pwTxtbx = new System.Windows.Forms.TextBox();
-            this.ADMIN = new System.Windows.Forms.Button();
+            this.admnBtn = new System.Windows.Forms.Button();
+            this.passBtn = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalDisply)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstColumn)).BeginInit();
@@ -235,23 +235,24 @@
             this.bstrTxtBx.TabIndex = 16;
             this.bstrTxtBx.TextChanged += new System.EventHandler(this.bstrTxtBx_TextChanged);
             // 
-            // pwTxtbx
+            // admnBtn
             // 
-            this.pwTxtbx.Location = new System.Drawing.Point(235, 722);
-            this.pwTxtbx.Name = "pwTxtbx";
-            this.pwTxtbx.Size = new System.Drawing.Size(126, 26);
-            this.pwTxtbx.TabIndex = 17;
-            this.pwTxtbx.TextChanged += new System.EventHandler(this.pwTxtbx_TextChanged);
+            this.admnBtn.Location = new System.Drawing.Point(355, 236);
+            this.admnBtn.Name = "admnBtn";
+            this.admnBtn.Size = new System.Drawing.Size(121, 26);
+            this.admnBtn.TabIndex = 18;
+            this.admnBtn.Text = "ADMIN";
+            this.admnBtn.UseVisualStyleBackColor = true;
+            this.admnBtn.Click += new System.EventHandler(this.admnBtn_Click_1);
             // 
-            // ADMIN
+            // passBtn
             // 
-            this.ADMIN.Location = new System.Drawing.Point(141, 719);
-            this.ADMIN.Name = "ADMIN";
-            this.ADMIN.Size = new System.Drawing.Size(88, 33);
-            this.ADMIN.TabIndex = 18;
-            this.ADMIN.Text = "ADMIN";
-            this.ADMIN.UseVisualStyleBackColor = true;
-            this.ADMIN.Click += new System.EventHandler(this.button1_Click);
+            this.passBtn.Location = new System.Drawing.Point(487, 236);
+            this.passBtn.Multiline = true;
+            this.passBtn.Name = "passBtn";
+            this.passBtn.Size = new System.Drawing.Size(100, 26);
+            this.passBtn.TabIndex = 19;
+            this.passBtn.TextChanged += new System.EventHandler(this.passBtn_TextChanged);
             // 
             // FillOutForm
             // 
@@ -261,8 +262,8 @@
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.bgg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(599, 764);
-            this.Controls.Add(this.ADMIN);
-            this.Controls.Add(this.pwTxtbx);
+            this.Controls.Add(this.passBtn);
+            this.Controls.Add(this.admnBtn);
             this.Controls.Add(this.personalDisply);
             this.Controls.Add(this.bstrTxtBx);
             this.Controls.Add(this.vaxTxtBx);
@@ -311,7 +312,7 @@
         private System.Windows.Forms.TextBox inTxtBx;
         private System.Windows.Forms.TextBox vaxTxtBx;
         private System.Windows.Forms.TextBox bstrTxtBx;
-        private System.Windows.Forms.TextBox pwTxtbx;
-        private System.Windows.Forms.Button ADMIN;
+        private System.Windows.Forms.Button admnBtn;
+        private System.Windows.Forms.TextBox passBtn;
     }
 }

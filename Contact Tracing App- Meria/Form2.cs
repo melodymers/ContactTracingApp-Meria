@@ -101,15 +101,25 @@ namespace Contact_Tracing_App__Meria
         private void bstrTxtBx_TextChanged(object sender, EventArgs e)
         {
         }
-
-        private void pwTxtbx_TextChanged(object sender, EventArgs e)
+        private void admnBtn_Click_1(object sender, EventArgs e)
         {
-
+            String pass = passBtn.Text;
+            if (pass == "admin123") 
+            {
+                var Form3 = new adminDesk();
+                Form3.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Input");
+            }
+           
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void passBtn_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
