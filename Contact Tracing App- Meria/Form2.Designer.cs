@@ -43,6 +43,8 @@
             this.inTxtBx = new System.Windows.Forms.TextBox();
             this.vaxTxtBx = new System.Windows.Forms.TextBox();
             this.bstrTxtBx = new System.Windows.Forms.TextBox();
+            this.pwTxtbx = new System.Windows.Forms.TextBox();
+            this.ADMIN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalDisply)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstColumn)).BeginInit();
@@ -233,6 +235,24 @@
             this.bstrTxtBx.TabIndex = 16;
             this.bstrTxtBx.TextChanged += new System.EventHandler(this.bstrTxtBx_TextChanged);
             // 
+            // pwTxtbx
+            // 
+            this.pwTxtbx.Location = new System.Drawing.Point(235, 722);
+            this.pwTxtbx.Name = "pwTxtbx";
+            this.pwTxtbx.Size = new System.Drawing.Size(126, 26);
+            this.pwTxtbx.TabIndex = 17;
+            this.pwTxtbx.TextChanged += new System.EventHandler(this.pwTxtbx_TextChanged);
+            // 
+            // ADMIN
+            // 
+            this.ADMIN.Location = new System.Drawing.Point(141, 719);
+            this.ADMIN.Name = "ADMIN";
+            this.ADMIN.Size = new System.Drawing.Size(88, 33);
+            this.ADMIN.TabIndex = 18;
+            this.ADMIN.Text = "ADMIN";
+            this.ADMIN.UseVisualStyleBackColor = true;
+            this.ADMIN.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FillOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -241,6 +261,8 @@
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.bgg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(599, 764);
+            this.Controls.Add(this.ADMIN);
+            this.Controls.Add(this.pwTxtbx);
             this.Controls.Add(this.personalDisply);
             this.Controls.Add(this.bstrTxtBx);
             this.Controls.Add(this.vaxTxtBx);
@@ -289,5 +311,7 @@
         private System.Windows.Forms.TextBox inTxtBx;
         private System.Windows.Forms.TextBox vaxTxtBx;
         private System.Windows.Forms.TextBox bstrTxtBx;
+        private System.Windows.Forms.TextBox pwTxtbx;
+        private System.Windows.Forms.Button ADMIN;
     }
 }

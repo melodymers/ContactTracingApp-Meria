@@ -101,6 +101,16 @@ namespace Contact_Tracing_App__Meria
         private void bstrTxtBx_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void pwTxtbx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
