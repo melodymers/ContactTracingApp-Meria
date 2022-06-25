@@ -237,9 +237,9 @@
             // 
             // admnBtn
             // 
-            this.admnBtn.Location = new System.Drawing.Point(355, 236);
+            this.admnBtn.Location = new System.Drawing.Point(355, 230);
             this.admnBtn.Name = "admnBtn";
-            this.admnBtn.Size = new System.Drawing.Size(121, 26);
+            this.admnBtn.Size = new System.Drawing.Size(126, 32);
             this.admnBtn.TabIndex = 18;
             this.admnBtn.Text = "ADMIN";
             this.admnBtn.UseVisualStyleBackColor = true;
@@ -247,10 +247,10 @@
             // 
             // passBtn
             // 
-            this.passBtn.Location = new System.Drawing.Point(487, 236);
+            this.passBtn.Location = new System.Drawing.Point(470, 230);
             this.passBtn.Multiline = true;
             this.passBtn.Name = "passBtn";
-            this.passBtn.Size = new System.Drawing.Size(100, 26);
+            this.passBtn.Size = new System.Drawing.Size(117, 32);
             this.passBtn.TabIndex = 19;
             this.passBtn.TextChanged += new System.EventHandler(this.passBtn_TextChanged);
             // 

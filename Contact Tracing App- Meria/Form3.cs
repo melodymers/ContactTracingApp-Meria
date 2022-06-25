@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Contact_Tracing_App__Meria
 {
@@ -15,6 +16,23 @@ namespace Contact_Tracing_App__Meria
         public adminDesk()
         {
             InitializeComponent();
+        }
+
+        private void adminDesk_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DisplayAllBtn_Click(object sender, EventArgs e)
+        {
+            StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
+
+            while (!reader.EndOfStream)
+            {
+                string line = reader.ReadLine();
+                string all = reader.ReadToEnd();
+                MessageBox.Show(line);
+            }
         }
     }
 }

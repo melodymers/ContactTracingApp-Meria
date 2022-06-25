@@ -103,8 +103,8 @@ namespace Contact_Tracing_App__Meria
         }
         private void admnBtn_Click_1(object sender, EventArgs e)
         {
-            String pass = passBtn.Text;
-            if (pass == "admin123") 
+            String pss = passBtn.Text;
+            if (pss == "admin123") 
             {
                 var Form3 = new adminDesk();
                 Form3.Show();
@@ -114,9 +114,7 @@ namespace Contact_Tracing_App__Meria
             {
                 MessageBox.Show("Wrong Input");
             }
-           
         }
-
         private void passBtn_TextChanged(object sender, EventArgs e)
         {
            
