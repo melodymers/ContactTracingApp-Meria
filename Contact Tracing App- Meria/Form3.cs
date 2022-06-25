@@ -26,13 +26,8 @@ namespace Contact_Tracing_App__Meria
         private void DisplayAllBtn_Click(object sender, EventArgs e)
         {
             StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
-
-            while (!reader.EndOfStream)
-            {
-                string line = reader.ReadLine();
-                string all = reader.ReadToEnd();
-                MessageBox.Show(line);
-            }
+            string all = reader.ReadToEnd();
+            MessageBox.Show(all);
         }
     }
 }
