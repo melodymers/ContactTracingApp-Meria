@@ -28,6 +28,7 @@ namespace Contact_Tracing_App__Meria
             StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
             string all = reader.ReadToEnd();
             MessageBox.Show(all);
+            trialbox.Text = all.ToString();
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.DisplayAllBtn = new System.Windows.Forms.Button();
+            this.trialbox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // DisplayAllBtn
@@ -40,11 +41,20 @@
             this.DisplayAllBtn.UseVisualStyleBackColor = true;
             this.DisplayAllBtn.Click += new System.EventHandler(this.DisplayAllBtn_Click);
             // 
+            // trialbox
+            // 
+            this.trialbox.Location = new System.Drawing.Point(339, 101);
+            this.trialbox.Name = "trialbox";
+            this.trialbox.Size = new System.Drawing.Size(420, 252);
+            this.trialbox.TabIndex = 1;
+            this.trialbox.Text = "";
+            // 
             // adminDesk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 625);
+            this.Controls.Add(this.trialbox);
             this.Controls.Add(this.DisplayAllBtn);
             this.Name = "adminDesk";
             this.Text = "Form3";
@@ -56,5 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Button DisplayAllBtn;
+        private System.Windows.Forms.RichTextBox trialbox;
     }
 }
