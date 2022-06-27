@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dateform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dateform.Designer.cs">
+      <DependentUpon>dateform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayByDate\Text.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dateform.resx">
+      <DependentUpon>dateform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\generate3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGGG.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

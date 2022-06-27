@@ -22,13 +22,55 @@ namespace Contact_Tracing_App__Meria
         {
 
         }
-
+        //all info
         private void DisplayAllBtn_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
+            StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt");
             string all = reader.ReadToEnd();
-            MessageBox.Show(all);
-            trialbox.Text = all.ToString();
+            forAllDisplayBox.Text = all.ToString();
+            reader.Close();
+        }//done
+
+       //dates
+        private void DatePickrBtn_Click(object sender, EventArgs e)
+        {
+        List<string> date = new List<string>();
+        string dates = SetDatePickr.Text;
+        int daterslt = 0;
+        var datefile = Directory.EnumerateFiles(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information");
+            foreach (string file in datefile)
+            {
+                string datecontents = File.ReadAllText(file);
+                if (datecontents.Contains(dates))
+                {
+                    date.Add(datecontents);
+                    daterslt++;
+                    continue;
+                }
+            }
+                if (daterslt == 0)
+                {
+                MessageBox.Show("NOTHING FOUND");
+                }
+            else
+            {
+                StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP.txt");
+                foreach(string datecontents in date)
+                {
+                    file.WriteLine(datecontents);
+
+                }
+                file.Close();
+                MessageBox.Show("Found: " + daterslt + " records on your specified date");
+                MessageBox.Show("Saved in the Contact Tracing Folder");
+                dateform data = new dateform();
+                data.ShowDialog();
+            }
+        }
+
+        private void recdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

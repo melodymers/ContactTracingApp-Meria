@@ -42,6 +42,7 @@ namespace Contact_Tracing_App__Meria
                 dox.WriteLine("TIME OUT: " + outTxtBx.Text);
                 dox.WriteLine("ARE YOU VACCINATED? " + vaxTxtBx.Text);
                 dox.WriteLine("RECEIVED A BOOSTER? " + bstrTxtBx.Text);
+                dox.WriteLine("DATE: " + datePick.Text);
                 dox.Close();
                 MessageBox.Show("THANK YOU FOR YOUR TIME", "COMPLETED");
                 Application.Exit();
@@ -118,6 +119,11 @@ namespace Contact_Tracing_App__Meria
         private void passBtn_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void datePick_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

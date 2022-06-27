@@ -45,6 +45,7 @@
             this.bstrTxtBx = new System.Windows.Forms.TextBox();
             this.admnBtn = new System.Windows.Forms.Button();
             this.passBtn = new System.Windows.Forms.TextBox();
+            this.datePick = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalDisply)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstColumn)).BeginInit();
@@ -254,6 +255,14 @@
             this.passBtn.TabIndex = 19;
             this.passBtn.TextChanged += new System.EventHandler(this.passBtn_TextChanged);
             // 
+            // datePick
+            // 
+            this.datePick.Location = new System.Drawing.Point(387, 198);
+            this.datePick.Name = "datePick";
+            this.datePick.Size = new System.Drawing.Size(200, 26);
+            this.datePick.TabIndex = 20;
+            this.datePick.ValueChanged += new System.EventHandler(this.datePick_ValueChanged);
+            // 
             // FillOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -262,6 +271,7 @@
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.bgg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(599, 764);
+            this.Controls.Add(this.datePick);
             this.Controls.Add(this.passBtn);
             this.Controls.Add(this.admnBtn);
             this.Controls.Add(this.personalDisply);
@@ -314,5 +324,6 @@
         private System.Windows.Forms.TextBox bstrTxtBx;
         private System.Windows.Forms.Button admnBtn;
         private System.Windows.Forms.TextBox passBtn;
+        private System.Windows.Forms.DateTimePicker datePick;
     }
 }
