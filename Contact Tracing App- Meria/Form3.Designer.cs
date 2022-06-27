@@ -41,12 +41,11 @@
             this.DisplayAllBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.DisplayAllBtn.BackColor = System.Drawing.Color.Transparent;
             this.DisplayAllBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DisplayAllBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DisplayAllBtn.ForeColor = System.Drawing.Color.Transparent;
             this.DisplayAllBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.DISPLAY_ALLl3;
             this.DisplayAllBtn.Location = new System.Drawing.Point(12, 27);
             this.DisplayAllBtn.Name = "DisplayAllBtn";
-            this.DisplayAllBtn.Size = new System.Drawing.Size(540, 83);
+            this.DisplayAllBtn.Size = new System.Drawing.Size(542, 83);
             this.DisplayAllBtn.TabIndex = 0;
             this.DisplayAllBtn.UseVisualStyleBackColor = false;
             this.DisplayAllBtn.Click += new System.EventHandler(this.DisplayAllBtn_Click);

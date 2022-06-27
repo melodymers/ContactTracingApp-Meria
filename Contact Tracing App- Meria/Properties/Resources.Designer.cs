@@ -113,6 +113,16 @@ namespace Contact_Tracing_App__Meria.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap by_namee {
+            get {
+                object obj = ResourceManager.GetObject("by namee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dateee {
             get {
                 object obj = ResourceManager.GetObject("dateee", resourceCulture);

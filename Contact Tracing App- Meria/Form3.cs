@@ -51,6 +51,7 @@ namespace Contact_Tracing_App__Meria
                 if (daterslt == 0)
                 {
                 MessageBox.Show("NOTHING FOUND");
+                this.Close();
                 }
             else
             {
