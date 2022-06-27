@@ -20,7 +20,7 @@ namespace Contact_Tracing_App__Meria
             foreach (string file in datefls)
             {
                 string dates = File.ReadAllText(file);
-                recdate.Text = recdate.Text + dates + "\n";
+                recDateLbl.Text = recDateLbl.Text + dates + "\n";
             }
 
         }

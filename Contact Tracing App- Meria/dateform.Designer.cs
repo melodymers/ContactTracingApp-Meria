@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.recdate = new System.Windows.Forms.Label();
+            this.recDateLbl = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // recdate
+            // recDateLbl
             // 
-            this.recdate.AutoSize = true;
-            this.recdate.Location = new System.Drawing.Point(129, 179);
-            this.recdate.Name = "recdate";
-            this.recdate.Size = new System.Drawing.Size(0, 20);
-            this.recdate.TabIndex = 6;
+            this.recDateLbl.BackColor = System.Drawing.SystemColors.Info;
+            this.recDateLbl.Location = new System.Drawing.Point(23, 39);
+            this.recDateLbl.Name = "recDateLbl";
+            this.recDateLbl.Size = new System.Drawing.Size(511, 599);
+            this.recDateLbl.TabIndex = 12;
+            this.recDateLbl.Text = "";
             // 
             // dateform
             // 
@@ -45,18 +46,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.BGGG;
             this.ClientSize = new System.Drawing.Size(563, 690);
-            this.Controls.Add(this.recdate);
+            this.Controls.Add(this.recDateLbl);
             this.Name = "dateform";
             this.ShowIcon = false;
             this.Text = "dateform";
             this.Load += new System.EventHandler(this.dateform_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label recdate;
+        private System.Windows.Forms.RichTextBox recDateLbl;
     }
 }

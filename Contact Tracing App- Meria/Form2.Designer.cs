@@ -257,7 +257,7 @@
             // 
             // datePick
             // 
-            this.datePick.Location = new System.Drawing.Point(387, 198);
+            this.datePick.Location = new System.Drawing.Point(12, 231);
             this.datePick.Name = "datePick";
             this.datePick.Size = new System.Drawing.Size(200, 26);
             this.datePick.TabIndex = 20;

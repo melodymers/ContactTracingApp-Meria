@@ -113,6 +113,16 @@ namespace Contact_Tracing_App__Meria.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dateee {
+            get {
+                object obj = ResourceManager.GetObject("dateee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap depress {
             get {
                 object obj = ResourceManager.GetObject("depress", resourceCulture);
@@ -126,6 +136,46 @@ namespace Contact_Tracing_App__Meria.Properties {
         internal static System.Drawing.Bitmap depress1 {
             get {
                 object obj = ResourceManager.GetObject("depress1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DISPLAY_ALLl {
+            get {
+                object obj = ResourceManager.GetObject("DISPLAY ALLl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DISPLAY_ALLl1 {
+            get {
+                object obj = ResourceManager.GetObject("DISPLAY ALLl1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DISPLAY_ALLl2 {
+            get {
+                object obj = ResourceManager.GetObject("DISPLAY ALLl2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DISPLAY_ALLl3 {
+            get {
+                object obj = ResourceManager.GetObject("DISPLAY ALLl3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

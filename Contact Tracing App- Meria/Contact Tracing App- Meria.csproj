@@ -174,5 +174,20 @@
   <ItemGroup>
     <None Include="Resources\BGGG.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISPLAY ALLl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISPLAY ALLl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISPLAY ALLl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISPLAY ALLl3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dateee.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

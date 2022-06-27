@@ -54,11 +54,11 @@ namespace Contact_Tracing_App__Meria
                 }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP.txt");
+                StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\date file.txt");
                 foreach(string datecontents in date)
                 {
+                    var item = date.LastOrDefault();
                     file.WriteLine(datecontents);
-
                 }
                 file.Close();
                 MessageBox.Show("Found: " + daterslt + " records on your specified date");
@@ -68,7 +68,12 @@ namespace Contact_Tracing_App__Meria
             }
         }
 
-        private void recdate_Click(object sender, EventArgs e)
+        private void recDateLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SetDatePickr_ValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -31,7 +31,7 @@ namespace Contact_Tracing_App__Meria
             }
         else
             {
-                StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\test.txt", true);
+                StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt", true);
                 dox.WriteLine("FULL NAME: " + nameTxtBx.Text);
                 dox.WriteLine("AGE: " + AgeTxtBx.Text);
                 dox.WriteLine("GENDER: " + genderTxtBx.Text);
