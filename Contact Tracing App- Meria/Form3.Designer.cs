@@ -32,8 +32,8 @@
             this.forAllDisplayBox = new System.Windows.Forms.RichTextBox();
             this.SetDatePickr = new System.Windows.Forms.DateTimePicker();
             this.DatePickrBtn = new System.Windows.Forms.Button();
-            this.recdate = new System.Windows.Forms.Label();
             this.recDateLbl = new System.Windows.Forms.Label();
+            this.filterByNamebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DisplayAllBtn
@@ -79,22 +79,28 @@
             this.DatePickrBtn.UseVisualStyleBackColor = false;
             this.DatePickrBtn.Click += new System.EventHandler(this.DatePickrBtn_Click);
             // 
-            // recdate
-            // 
-            this.recdate.AutoSize = true;
-            this.recdate.BackColor = System.Drawing.Color.Transparent;
-            this.recdate.Location = new System.Drawing.Point(120, 538);
-            this.recdate.Name = "recdate";
-            this.recdate.Size = new System.Drawing.Size(0, 20);
-            this.recdate.TabIndex = 5;
-            // 
             // recDateLbl
             // 
             this.recDateLbl.AutoSize = true;
-            this.recDateLbl.Location = new System.Drawing.Point(283, 344);
+            this.recDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.recDateLbl.Location = new System.Drawing.Point(121, 538);
             this.recDateLbl.Name = "recDateLbl";
-            this.recDateLbl.Size = new System.Drawing.Size(0, 20);
+            this.recDateLbl.Size = new System.Drawing.Size(52, 20);
             this.recDateLbl.TabIndex = 12;
+            this.recDateLbl.Text = "DATE";
+            this.recDateLbl.Click += new System.EventHandler(this.recDateLbl_Click_1);
+            // 
+            // filterByNamebtn
+            // 
+            this.filterByNamebtn.BackColor = System.Drawing.Color.Transparent;
+            this.filterByNamebtn.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.by_namee;
+            this.filterByNamebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filterByNamebtn.ForeColor = System.Drawing.Color.Transparent;
+            this.filterByNamebtn.Location = new System.Drawing.Point(287, 448);
+            this.filterByNamebtn.Name = "filterByNamebtn";
+            this.filterByNamebtn.Size = new System.Drawing.Size(267, 55);
+            this.filterByNamebtn.TabIndex = 13;
+            this.filterByNamebtn.UseVisualStyleBackColor = false;
             // 
             // adminDesk
             // 
@@ -104,9 +110,9 @@
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.BGGG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(564, 708);
+            this.Controls.Add(this.filterByNamebtn);
             this.Controls.Add(this.DisplayAllBtn);
             this.Controls.Add(this.recDateLbl);
-            this.Controls.Add(this.recdate);
             this.Controls.Add(this.DatePickrBtn);
             this.Controls.Add(this.SetDatePickr);
             this.Controls.Add(this.forAllDisplayBox);
@@ -122,8 +128,8 @@
         private System.Windows.Forms.RichTextBox forAllDisplayBox;
         private System.Windows.Forms.DateTimePicker SetDatePickr;
         private System.Windows.Forms.Button DatePickrBtn;
-        private System.Windows.Forms.Label recdate;
         private System.Windows.Forms.Label recDateLbl;
         private System.Windows.Forms.Button DisplayAllBtn;
+        private System.Windows.Forms.Button filterByNamebtn;
     }
 }

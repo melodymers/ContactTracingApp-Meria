@@ -29,7 +29,7 @@ namespace Contact_Tracing_App__Meria
             string all = reader.ReadToEnd();
             forAllDisplayBox.Text = all.ToString();
             reader.Close();
-        }//done
+        }
 
        //dates
         private void DatePickrBtn_Click(object sender, EventArgs e)
@@ -51,14 +51,13 @@ namespace Contact_Tracing_App__Meria
                 if (daterslt == 0)
                 {
                 MessageBox.Show("NOTHING FOUND");
-                this.Close();
+                this.Hide();
                 }
             else
             {
                 StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\date file.txt");
                 foreach(string datecontents in date)
                 {
-                    var item = date.LastOrDefault();
                     file.WriteLine(datecontents);
                 }
                 file.Close();
@@ -68,13 +67,12 @@ namespace Contact_Tracing_App__Meria
                 data.ShowDialog();
             }
         }
-
-        private void recDateLbl_Click(object sender, EventArgs e)
+        private void SetDatePickr_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void SetDatePickr_ValueChanged(object sender, EventArgs e)
+        private void recDateLbl_Click_1(object sender, EventArgs e)
         {
 
         }

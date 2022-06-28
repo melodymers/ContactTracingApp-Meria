@@ -39,6 +39,7 @@
             this.recDateLbl.Size = new System.Drawing.Size(511, 599);
             this.recDateLbl.TabIndex = 12;
             this.recDateLbl.Text = "";
+            this.recDateLbl.TextChanged += new System.EventHandler(this.recDateLbl_TextChanged);
             // 
             // dateform
             // 

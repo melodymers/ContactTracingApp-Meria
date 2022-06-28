@@ -32,10 +32,10 @@ namespace Contact_Tracing_App__Meria
         else
             {
                 StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt", true);
-                dox.WriteLine("FULL NAME: " + nameTxtBx.Text + "," + "AGE: " + AgeTxtBx.Text + "," + "GENDER: " + genderTxtBx.Text + "," +
-                    "ADDRESS: " + AddTxtBx.Text + "," + "BIRTH DATE: " + bdayTxtBx.Text + "TEMPERATURE: " + tempTxtBx.Text + "TIME IN: " + inTxtBx.Text + "," +
-                    "TIME OUT: " + outTxtBx.Text + "," + "ARE YOU VACCINATED? " + vaxTxtBx.Text + "RECEIVED A BOOSTER? " + bstrTxtBx.Text + "," +
-                    "DATE: " + datePick.Text);
+                dox.WriteLine("FULL NAME: " + nameTxtBx.Text + ", " + "AGE: " + AgeTxtBx.Text + ", " + "GENDER: " + genderTxtBx.Text + ", " +
+                    "ADDRESS: " + AddTxtBx.Text + ", " + "BIRTH DATE: " + bdayTxtBx.Text + ", " + "TEMPERATURE: " + tempTxtBx.Text + ", " +
+                    "TIME IN: " + inTxtBx.Text + ", " + "TIME IN: " + inTxtBx.Text + ", " + "TIME OUT: " + outTxtBx.Text + ", " +
+                    "ARE YOU VACCINATED? " + vaxTxtBx.Text + ", " + "RECEIVED A BOOSTER? " + bstrTxtBx.Text + ", " + "DATE: " + datePick.Text);
                 dox.Close();
                 MessageBox.Show("THANK YOU FOR YOUR TIME", "COMPLETED");
                 Application.Exit();
