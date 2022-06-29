@@ -34,35 +34,36 @@ namespace Contact_Tracing_App__Meria
        //dates
         private void DatePickrBtn_Click(object sender, EventArgs e)
         {
+        StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt");
         List<string> date = new List<string>();
         string dates = SetDatePickr.Text;
-        int daterslt = 0;
-        var datefile = Directory.EnumerateFiles(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information");
-            foreach (string file in datefile)
+        int resultdate = 0;
+        while (!reader.EndOfStream)
             {
-                string datecontents = File.ReadAllText(file);
+                string datecontents = reader.ReadLine();
                 if (datecontents.Contains(dates))
                 {
                     date.Add(datecontents);
-                    daterslt++;
+                    resultdate++;
                     continue;
                 }
             }
-                if (daterslt == 0)
+                if (resultdate == 0)
                 {
                 MessageBox.Show("NOTHING FOUND");
-                this.Hide();
+                this.Close();
                 }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\date file.txt");
+                reader.Close();
+                StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\date folder\date file.txt");
                 foreach(string datecontents in date)
                 {
                     file.WriteLine(datecontents);
                 }
                 file.Close();
-                MessageBox.Show("Found: " + daterslt + " records on your specified date");
-                MessageBox.Show("Saved in the Contact Tracing Folder");
+                MessageBox.Show("Found: " + resultdate + " records on your specified date");
+                MessageBox.Show("Saved in the Information CTAPP");
                 dateform data = new dateform();
                 data.ShowDialog();
             }
@@ -72,7 +73,16 @@ namespace Contact_Tracing_App__Meria
 
         }
 
-        private void recDateLbl_Click_1(object sender, EventArgs e)
+        private void recDateLbl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void filterByNamebtn_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void NameInputtxtbx_TextChanged(object sender, EventArgs e)
         {
 
         }

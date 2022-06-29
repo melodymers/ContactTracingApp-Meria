@@ -16,7 +16,7 @@ namespace Contact_Tracing_App__Meria
         public dateform()
         {
             InitializeComponent();
-            var datefls = Directory.GetFiles(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP");
+            var datefls = Directory.GetFiles(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\date folder");
             foreach (string file in datefls)
             {
                 string dates = File.ReadAllText(file);
@@ -32,7 +32,7 @@ namespace Contact_Tracing_App__Meria
 
         private void recDateLbl_TextChanged(object sender, EventArgs e)
         {
-
+            recDateLbl.Visible = false;
         }
     }
 }

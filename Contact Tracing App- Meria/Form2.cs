@@ -35,7 +35,8 @@ namespace Contact_Tracing_App__Meria
                 dox.WriteLine("FULL NAME: " + nameTxtBx.Text + ", " + "AGE: " + AgeTxtBx.Text + ", " + "GENDER: " + genderTxtBx.Text + ", " +
                     "ADDRESS: " + AddTxtBx.Text + ", " + "BIRTH DATE: " + bdayTxtBx.Text + ", " + "TEMPERATURE: " + tempTxtBx.Text + ", " +
                     "TIME IN: " + inTxtBx.Text + ", " + "TIME IN: " + inTxtBx.Text + ", " + "TIME OUT: " + outTxtBx.Text + ", " +
-                    "ARE YOU VACCINATED? " + vaxTxtBx.Text + ", " + "RECEIVED A BOOSTER? " + bstrTxtBx.Text + ", " + "DATE: " + datePick.Text);
+                    "ARE YOU VACCINATED? " + vaxTxtBx.Text + ", " + "RECEIVED A BOOSTER? " + bstrTxtBx.Text + ", " + "DATE: " + SetDatePickr.Text);
+                dox.WriteLine("-------------------");
                 dox.Close();
                 MessageBox.Show("THANK YOU FOR YOUR TIME", "COMPLETED");
                 Application.Exit();
@@ -113,8 +114,7 @@ namespace Contact_Tracing_App__Meria
         {
            
         }
-
-        private void datePick_ValueChanged(object sender, EventArgs e)
+        private void SetDatePickr_ValueChanged(object sender, EventArgs e)
         {
 
         }
