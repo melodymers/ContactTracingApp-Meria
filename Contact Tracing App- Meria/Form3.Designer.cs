@@ -42,9 +42,9 @@
             // 
             this.DisplayAllBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.DisplayAllBtn.BackColor = System.Drawing.Color.Transparent;
-            this.DisplayAllBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DisplayAllBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DisplayAllBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.DisplayAllBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.DISPLAY_ALLl3;
+            this.DisplayAllBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.display_alllll;
             this.DisplayAllBtn.Location = new System.Drawing.Point(11, 27);
             this.DisplayAllBtn.Name = "DisplayAllBtn";
             this.DisplayAllBtn.Size = new System.Drawing.Size(541, 83);
@@ -56,13 +56,13 @@
             // 
             this.forAllDisplayBox.Location = new System.Drawing.Point(12, 116);
             this.forAllDisplayBox.Name = "forAllDisplayBox";
-            this.forAllDisplayBox.Size = new System.Drawing.Size(542, 310);
+            this.forAllDisplayBox.Size = new System.Drawing.Size(542, 445);
             this.forAllDisplayBox.TabIndex = 1;
             this.forAllDisplayBox.Text = "";
             // 
             // SetDatePickr
             // 
-            this.SetDatePickr.Location = new System.Drawing.Point(11, 509);
+            this.SetDatePickr.Location = new System.Drawing.Point(13, 628);
             this.SetDatePickr.Name = "SetDatePickr";
             this.SetDatePickr.Size = new System.Drawing.Size(268, 26);
             this.SetDatePickr.TabIndex = 2;
@@ -74,9 +74,9 @@
             this.DatePickrBtn.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.dateee;
             this.DatePickrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DatePickrBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.DatePickrBtn.Location = new System.Drawing.Point(12, 448);
+            this.DatePickrBtn.Location = new System.Drawing.Point(12, 567);
             this.DatePickrBtn.Name = "DatePickrBtn";
-            this.DatePickrBtn.Size = new System.Drawing.Size(267, 55);
+            this.DatePickrBtn.Size = new System.Drawing.Size(267, 57);
             this.DatePickrBtn.TabIndex = 4;
             this.DatePickrBtn.UseVisualStyleBackColor = false;
             this.DatePickrBtn.Click += new System.EventHandler(this.DatePickrBtn_Click);
@@ -87,7 +87,7 @@
             this.filterByNamebtn.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.by_namee;
             this.filterByNamebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filterByNamebtn.ForeColor = System.Drawing.Color.Transparent;
-            this.filterByNamebtn.Location = new System.Drawing.Point(287, 448);
+            this.filterByNamebtn.Location = new System.Drawing.Point(287, 569);
             this.filterByNamebtn.Name = "filterByNamebtn";
             this.filterByNamebtn.Size = new System.Drawing.Size(267, 55);
             this.filterByNamebtn.TabIndex = 13;
@@ -97,28 +97,30 @@
             // recDateLbl
             // 
             this.recDateLbl.BackColor = System.Drawing.SystemColors.Info;
-            this.recDateLbl.Location = new System.Drawing.Point(12, 541);
+            this.recDateLbl.Location = new System.Drawing.Point(12, 662);
             this.recDateLbl.Name = "recDateLbl";
-            this.recDateLbl.Size = new System.Drawing.Size(267, 155);
+            this.recDateLbl.Size = new System.Drawing.Size(267, 34);
             this.recDateLbl.TabIndex = 14;
             this.recDateLbl.Text = "";
+            this.recDateLbl.Visible = false;
             this.recDateLbl.TextChanged += new System.EventHandler(this.recDateLbl_TextChanged);
             // 
             // NameInputtxtbx
             // 
-            this.NameInputtxtbx.Location = new System.Drawing.Point(298, 509);
+            this.NameInputtxtbx.Location = new System.Drawing.Point(287, 630);
             this.NameInputtxtbx.Name = "NameInputtxtbx";
-            this.NameInputtxtbx.Size = new System.Drawing.Size(254, 26);
+            this.NameInputtxtbx.Size = new System.Drawing.Size(267, 26);
             this.NameInputtxtbx.TabIndex = 15;
             this.NameInputtxtbx.TextChanged += new System.EventHandler(this.NameInputtxtbx_TextChanged);
             // 
             // nameformtxtbox
             // 
-            this.nameformtxtbox.Location = new System.Drawing.Point(298, 541);
+            this.nameformtxtbox.Location = new System.Drawing.Point(287, 662);
             this.nameformtxtbox.Name = "nameformtxtbox";
-            this.nameformtxtbox.Size = new System.Drawing.Size(254, 155);
+            this.nameformtxtbox.Size = new System.Drawing.Size(265, 34);
             this.nameformtxtbox.TabIndex = 16;
             this.nameformtxtbox.Text = "";
+            this.nameformtxtbox.Visible = false;
             this.nameformtxtbox.TextChanged += new System.EventHandler(this.nameformtxtbox_TextChanged);
             // 
             // adminDesk
