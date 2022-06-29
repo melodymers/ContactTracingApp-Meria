@@ -35,6 +35,7 @@
             this.filterByNamebtn = new System.Windows.Forms.Button();
             this.recDateLbl = new System.Windows.Forms.RichTextBox();
             this.NameInputtxtbx = new System.Windows.Forms.TextBox();
+            this.nameformtxtbox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // DisplayAllBtn
@@ -111,6 +112,15 @@
             this.NameInputtxtbx.TabIndex = 15;
             this.NameInputtxtbx.TextChanged += new System.EventHandler(this.NameInputtxtbx_TextChanged);
             // 
+            // nameformtxtbox
+            // 
+            this.nameformtxtbox.Location = new System.Drawing.Point(298, 541);
+            this.nameformtxtbox.Name = "nameformtxtbox";
+            this.nameformtxtbox.Size = new System.Drawing.Size(254, 155);
+            this.nameformtxtbox.TabIndex = 16;
+            this.nameformtxtbox.Text = "";
+            this.nameformtxtbox.TextChanged += new System.EventHandler(this.nameformtxtbox_TextChanged);
+            // 
             // adminDesk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -119,6 +129,7 @@
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.BGGG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(564, 708);
+            this.Controls.Add(this.nameformtxtbox);
             this.Controls.Add(this.NameInputtxtbx);
             this.Controls.Add(this.recDateLbl);
             this.Controls.Add(this.filterByNamebtn);
@@ -142,5 +153,6 @@
         private System.Windows.Forms.Button filterByNamebtn;
         private System.Windows.Forms.RichTextBox recDateLbl;
         private System.Windows.Forms.TextBox NameInputtxtbx;
+        private System.Windows.Forms.RichTextBox nameformtxtbox;
     }
 }

@@ -31,14 +31,14 @@ namespace Contact_Tracing_App__Meria
             reader.Close();
         }
 
-       //dates
+        //dates
         private void DatePickrBtn_Click(object sender, EventArgs e)
         {
-        StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt");
-        List<string> date = new List<string>();
-        string dates = SetDatePickr.Text;
-        int resultdate = 0;
-        while (!reader.EndOfStream)
+            StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt");
+            List<string> date = new List<string>();
+            string dates = SetDatePickr.Text;
+            int resultdate = 0;
+            while (!reader.EndOfStream)
             {
                 string datecontents = reader.ReadLine();
                 if (datecontents.Contains(dates))
@@ -48,16 +48,16 @@ namespace Contact_Tracing_App__Meria
                     continue;
                 }
             }
-                if (resultdate == 0)
-                {
+            if (resultdate == 0)
+            {
                 MessageBox.Show("NOTHING FOUND");
                 this.Close();
-                }
+            }
             else
             {
                 reader.Close();
                 StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\date folder\date file.txt");
-                foreach(string datecontents in date)
+                foreach (string datecontents in date)
                 {
                     file.WriteLine(datecontents);
                 }
@@ -80,9 +80,47 @@ namespace Contact_Tracing_App__Meria
 
         private void filterByNamebtn_Click(object sender, EventArgs e)
         {
+            StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt");
+            List<string> name = new List<string>();
+            string names = NameInputtxtbx.Text;
+            int resultname = 0;
+            while (!reader.EndOfStream)
+            {
+                string datecontents = reader.ReadLine();
+                if (datecontents.Contains(names))
+                {
+                    name.Add(datecontents);
+                    resultname++;
+                    continue;
+                }
+            }
+            if (resultname == 0)
+            {
+                MessageBox.Show("NOTHING FOUND");
+                this.Close();
+            }
+            else
+            {
+                reader.Close();
+                StreamWriter file = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\name folder\name file.txt");
+                foreach (string datecontents in name)
+                {
+                    file.WriteLine(datecontents);
+                }
+                file.Close();
+                MessageBox.Show("Found: " + resultname + " records on your specified name");
+                MessageBox.Show("Saved in the Information CTAPP");
+                name_form data = new name_form();
+                data.ShowDialog();
+            }
         }
 
         private void NameInputtxtbx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameformtxtbox_TextChanged(object sender, EventArgs e)
         {
 
         }
