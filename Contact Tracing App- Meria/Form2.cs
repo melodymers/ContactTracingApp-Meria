@@ -118,6 +118,13 @@ namespace Contact_Tracing_App__Meria
         {
 
         }
+
+        private void GenQrBtn_Click(object sender, EventArgs e)
+        {
+            var generateQr = new generateQr();
+            generateQr.Show();
+            this.Hide();
+        }
     }
 }
 

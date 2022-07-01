@@ -13,3 +13,4 @@ C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Mer
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.adminDesk.resources
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.dateform.resources
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.name_form.resources
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.generateQr.resources

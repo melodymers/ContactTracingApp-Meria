@@ -46,6 +46,7 @@
             this.admnBtn = new System.Windows.Forms.Button();
             this.passBtn = new System.Windows.Forms.TextBox();
             this.SetDatePickr = new System.Windows.Forms.DateTimePicker();
+            this.GenQrBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalDisply)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstColumn)).BeginInit();
@@ -59,7 +60,7 @@
             this.GenerateBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.GenerateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenerateBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.generate3;
-            this.GenerateBtn.Location = new System.Drawing.Point(175, 625);
+            this.GenerateBtn.Location = new System.Drawing.Point(77, 625);
             this.GenerateBtn.Name = "GenerateBtn";
             this.GenerateBtn.Size = new System.Drawing.Size(218, 77);
             this.GenerateBtn.TabIndex = 0;
@@ -263,6 +264,20 @@
             this.SetDatePickr.TabIndex = 21;
             this.SetDatePickr.ValueChanged += new System.EventHandler(this.SetDatePickr_ValueChanged);
             // 
+            // GenQrBtn
+            // 
+            this.GenQrBtn.AccessibleDescription = "submit button";
+            this.GenQrBtn.BackColor = System.Drawing.Color.Transparent;
+            this.GenQrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.GenQrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenQrBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.custom1;
+            this.GenQrBtn.Location = new System.Drawing.Point(312, 625);
+            this.GenQrBtn.Name = "GenQrBtn";
+            this.GenQrBtn.Size = new System.Drawing.Size(218, 77);
+            this.GenQrBtn.TabIndex = 22;
+            this.GenQrBtn.UseVisualStyleBackColor = false;
+            this.GenQrBtn.Click += new System.EventHandler(this.GenQrBtn_Click);
+            // 
             // FillOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -271,6 +286,7 @@
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.bgg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(599, 764);
+            this.Controls.Add(this.GenQrBtn);
             this.Controls.Add(this.SetDatePickr);
             this.Controls.Add(this.passBtn);
             this.Controls.Add(this.admnBtn);
@@ -325,5 +341,6 @@
         private System.Windows.Forms.Button admnBtn;
         private System.Windows.Forms.TextBox passBtn;
         private System.Windows.Forms.DateTimePicker SetDatePickr;
+        private System.Windows.Forms.Button GenQrBtn;
     }
 }
