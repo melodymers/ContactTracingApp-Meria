@@ -66,6 +66,7 @@
             this.CBBox.Name = "CBBox";
             this.CBBox.Size = new System.Drawing.Size(415, 28);
             this.CBBox.TabIndex = 2;
+            this.CBBox.SelectedIndexChanged += new System.EventHandler(this.CBBox_SelectedIndexChanged);
             // 
             // StartBtn
             // 
@@ -107,6 +108,7 @@
             this.stopBtn.TabIndex = 6;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = true;
+            this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
             // generateQr
             // 

@@ -79,12 +79,24 @@ namespace Contact_Tracing_App__Meria
             {
                 StreamWriter QRfolder = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\QR code.txt", true);
                 QRfolder.WriteLine(data);
-                MessageBox.Show("Inforamation is uploaded");
+                MessageBox.Show("Information is uploaded");
                 Application.Restart();
             }
         }
 
         private void picBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stopBtn_Click(object sender, EventArgs e)
+        {
+            capturedFrame = new VideoCaptureDevice(capturingDevice[CBBox.SelectedIndex].MonikerString);
+            capturedFrame.NewFrame += new NewFrameEventHandler(final_Newframe);
+            capturedFrame.Stop();
+        }
+
+        private void CBBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
