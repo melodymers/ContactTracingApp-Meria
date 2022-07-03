@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelQR = new System.Windows.Forms.Label();
             this.picBox = new System.Windows.Forms.PictureBox();
             this.CBBox = new System.Windows.Forms.ComboBox();
             this.StartBtn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtBox = new System.Windows.Forms.RichTextBox();
             this.readBtn = new System.Windows.Forms.Button();
+            this.genTmr = new System.Windows.Forms.Timer(this.components);
+            this.stopBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +57,7 @@
             this.picBox.Size = new System.Drawing.Size(499, 433);
             this.picBox.TabIndex = 1;
             this.picBox.TabStop = false;
+            this.picBox.Click += new System.EventHandler(this.picBox_Click);
             // 
             // CBBox
             // 
@@ -67,28 +71,42 @@
             // 
             this.StartBtn.Location = new System.Drawing.Point(423, 514);
             this.StartBtn.Name = "StartBtn";
-            this.StartBtn.Size = new System.Drawing.Size(102, 24);
+            this.StartBtn.Size = new System.Drawing.Size(102, 42);
             this.StartBtn.TabIndex = 3;
             this.StartBtn.Text = "Start";
             this.StartBtn.UseVisualStyleBackColor = true;
             this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
             // 
-            // richTextBox1
+            // txtBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(26, 513);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(391, 214);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            this.txtBox.Location = new System.Drawing.Point(26, 513);
+            this.txtBox.Name = "txtBox";
+            this.txtBox.Size = new System.Drawing.Size(391, 214);
+            this.txtBox.TabIndex = 4;
+            this.txtBox.Text = "";
             // 
             // readBtn
             // 
-            this.readBtn.Location = new System.Drawing.Point(423, 544);
+            this.readBtn.Location = new System.Drawing.Point(423, 562);
             this.readBtn.Name = "readBtn";
-            this.readBtn.Size = new System.Drawing.Size(102, 25);
+            this.readBtn.Size = new System.Drawing.Size(102, 43);
             this.readBtn.TabIndex = 5;
             this.readBtn.Text = "Read";
             this.readBtn.UseVisualStyleBackColor = true;
+            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
+            // 
+            // genTmr
+            // 
+            this.genTmr.Tick += new System.EventHandler(this.IndTmr);
+            // 
+            // stopBtn
+            // 
+            this.stopBtn.Location = new System.Drawing.Point(423, 611);
+            this.stopBtn.Name = "stopBtn";
+            this.stopBtn.Size = new System.Drawing.Size(102, 43);
+            this.stopBtn.TabIndex = 6;
+            this.stopBtn.Text = "Stop";
+            this.stopBtn.UseVisualStyleBackColor = true;
             // 
             // generateQr
             // 
@@ -96,14 +114,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_App__Meria.Properties.Resources.BGGG;
             this.ClientSize = new System.Drawing.Size(553, 739);
+            this.Controls.Add(this.stopBtn);
             this.Controls.Add(this.readBtn);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtBox);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.CBBox);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.labelQR);
             this.Name = "generateQr";
             this.ShowIcon = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.generateQr_FormClosing);
             this.Load += new System.EventHandler(this.generateQr_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
@@ -117,7 +137,9 @@
         private System.Windows.Forms.PictureBox picBox;
         private System.Windows.Forms.ComboBox CBBox;
         private System.Windows.Forms.Button StartBtn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtBox;
         private System.Windows.Forms.Button readBtn;
+        private System.Windows.Forms.Timer genTmr;
+        private System.Windows.Forms.Button stopBtn;
     }
 }

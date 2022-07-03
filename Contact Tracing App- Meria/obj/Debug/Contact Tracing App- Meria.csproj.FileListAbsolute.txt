@@ -14,3 +14,14 @@ C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Mer
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.dateform.resources
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.name_form.resources
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.generateQr.resources
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\AForge.dll
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.dll
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\zxing.dll
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\zxing.presentation.dll
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\AForge.xml
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.xml
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\zxing.xml
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\zxing.presentation.xml
+C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.CopyComplete

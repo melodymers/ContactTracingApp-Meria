@@ -124,5 +124,10 @@ namespace Contact_Tracing_App__Meria
         {
 
         }
+
+        private void forAllDisplayBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

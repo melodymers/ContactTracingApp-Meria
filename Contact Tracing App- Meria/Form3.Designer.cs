@@ -59,6 +59,7 @@
             this.forAllDisplayBox.Size = new System.Drawing.Size(542, 445);
             this.forAllDisplayBox.TabIndex = 1;
             this.forAllDisplayBox.Text = "";
+            this.forAllDisplayBox.TextChanged += new System.EventHandler(this.forAllDisplayBox_TextChanged);
             // 
             // SetDatePickr
             // 
