@@ -266,11 +266,11 @@
             // 
             // GenQrBtn
             // 
-            this.GenQrBtn.AccessibleDescription = "submit button";
+            this.GenQrBtn.AccessibleDescription = "generate qr";
             this.GenQrBtn.BackColor = System.Drawing.Color.Transparent;
-            this.GenQrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.GenQrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GenQrBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.custom1;
+            this.GenQrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.GenQrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GenQrBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.custom2;
             this.GenQrBtn.Location = new System.Drawing.Point(312, 625);
             this.GenQrBtn.Name = "GenQrBtn";
             this.GenQrBtn.Size = new System.Drawing.Size(218, 77);
