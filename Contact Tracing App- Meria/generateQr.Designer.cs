@@ -85,6 +85,7 @@
             this.txtBox.Size = new System.Drawing.Size(391, 214);
             this.txtBox.TabIndex = 4;
             this.txtBox.Text = "";
+            this.txtBox.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
             // 
             // readBtn
             // 

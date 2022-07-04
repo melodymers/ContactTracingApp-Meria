@@ -40,6 +40,7 @@ namespace Contact_Tracing_App__Meria
             capturedFrame = new VideoCaptureDevice(capturingDevice[CBBox.SelectedIndex].MonikerString);
             capturedFrame.NewFrame += new NewFrameEventHandler(final_Newframe);
             capturedFrame.Start();
+            genTmr.Start();
         }
         private void final_Newframe(object sender, NewFrameEventArgs eventArgs)
         {
@@ -54,31 +55,30 @@ namespace Contact_Tracing_App__Meria
 
         private void IndTmr(object sender, EventArgs e)
         {
-            BarcodeReader reader = new BarcodeReader();
-            Result result = reader.Decode((Bitmap)picBox.Image);
-            try
+           if (picBox.Image != null)
             {
-                string decoded = result.ToString().Trim();
-                if (decoded != "")
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)picBox.Image);
+                if (result != null)
                 {
-                    txtBox.Text = decoded;
+                    txtBox.Text = result.ToString();
+
+                    
                 }
-            }
-            catch (Exception ex)
-            {
             }
         }
         private void readBtn_Click(object sender, EventArgs e)
         {
-            string data = picBox.Text;
+            string data = txtBox.Text;
             if (data == "")
             {
                 MessageBox.Show("Please try again");
             }
             else
             {
-                StreamWriter QRfolder = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\QR code.txt", true);
+                StreamWriter QRfolder = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\QR code folder\QR code.txt", true);
                 QRfolder.WriteLine(data);
+                QRfolder.Close();
                 MessageBox.Show("Information is uploaded");
                 Application.Restart();
             }
@@ -97,6 +97,11 @@ namespace Contact_Tracing_App__Meria
         }
 
         private void CBBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBox_TextChanged(object sender, EventArgs e)
         {
 
         }
