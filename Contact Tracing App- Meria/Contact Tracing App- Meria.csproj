@@ -86,11 +86,11 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="generateQr.cs">
+    <Compile Include="scanQr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="generateQr.Designer.cs">
-      <DependentUpon>generateQr.cs</DependentUpon>
+    <Compile Include="scanQr.Designer.cs">
+      <DependentUpon>scanQr.cs</DependentUpon>
     </Compile>
     <Compile Include="name form.cs">
       <SubType>Form</SubType>
@@ -112,8 +112,8 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="generateQr.resx">
-      <DependentUpon>generateQr.cs</DependentUpon>
+    <EmbeddedResource Include="scanQr.resx">
+      <DependentUpon>scanQr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="name form.resx">
       <DependentUpon>name form.cs</DependentUpon>

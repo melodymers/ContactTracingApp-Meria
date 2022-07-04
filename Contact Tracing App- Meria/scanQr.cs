@@ -16,12 +16,12 @@ using ZXing.Aztec;
 
 namespace Contact_Tracing_App__Meria
 {
-    public partial class generateQr : Form
+    public partial class scanQr : Form
     {
 
         private FilterInfoCollection capturingDevice;
         private VideoCaptureDevice capturedFrame;
-        public generateQr()
+        public scanQr()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing_App__Meria
 {
-    partial class generateQr
+    partial class scanQr
     {
         /// <summary>
         /// Required designer variable.
