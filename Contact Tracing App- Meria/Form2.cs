@@ -119,10 +119,17 @@ namespace Contact_Tracing_App__Meria
 
         }
 
-        private void GenQrBtn_Click(object sender, EventArgs e)
+        private void ScanQR_Click(object sender, EventArgs e)
         {
-            var generateQr = new scanQr();
-            generateQr.Show();
+            var scanQr = new scanQr();
+            scanQr.Show();
+            this.Hide();
+        }
+
+        private void GenrBtn_Click(object sender, EventArgs e)
+        {
+            var GenQr = new GenQr();
+            GenQr.Show();
             this.Hide();
         }
     }

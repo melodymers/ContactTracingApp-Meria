@@ -160,6 +160,9 @@
   <data name="sgnuo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sgnuo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="custom2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\custom2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bbb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,7 +214,7 @@
   <data name="text box" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\text box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="custom2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\custom2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scann" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scann.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -26,3 +26,30 @@ C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Mer
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\bin\Debug\zxing.presentation.xml
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.CopyComplete
 C:\Users\Melody\source\repos\Contact Tracing App- Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.scanQr.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\Contact Tracing App- Meria.exe.config
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\Contact Tracing App- Meria.exe
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\Contact Tracing App- Meria.pdb
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\AForge.dll
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.dll
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\zxing.dll
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\zxing.presentation.dll
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\AForge.xml
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.xml
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\zxing.xml
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\zxing.presentation.xml
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.AssemblyReference.cache
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.SuggestedBindingRedirects.cache
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.dateform.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.SignUp.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.FillOutForm.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.adminDesk.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.scanQr.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.name_form.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.Properties.Resources.resources
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.GenerateResource.cache
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.CoreCompileInputs.cache
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.CopyComplete
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.exe
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.pdb

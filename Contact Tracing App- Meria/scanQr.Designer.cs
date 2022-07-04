@@ -89,7 +89,7 @@
             // 
             // readBtn
             // 
-            this.readBtn.Location = new System.Drawing.Point(423, 562);
+            this.readBtn.Location = new System.Drawing.Point(423, 654);
             this.readBtn.Name = "readBtn";
             this.readBtn.Size = new System.Drawing.Size(102, 43);
             this.readBtn.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             // stopBtn
             // 
-            this.stopBtn.Location = new System.Drawing.Point(423, 611);
+            this.stopBtn.Location = new System.Drawing.Point(423, 582);
             this.stopBtn.Name = "stopBtn";
             this.stopBtn.Size = new System.Drawing.Size(102, 43);
             this.stopBtn.TabIndex = 6;
@@ -111,7 +111,7 @@
             this.stopBtn.UseVisualStyleBackColor = true;
             this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
-            // generateQr
+            // scanQr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,7 +124,7 @@
             this.Controls.Add(this.CBBox);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.labelQR);
-            this.Name = "generateQr";
+            this.Name = "scanQr";
             this.ShowIcon = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.generateQr_FormClosing);
             this.Load += new System.EventHandler(this.generateQr_Load);
