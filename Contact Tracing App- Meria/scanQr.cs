@@ -62,8 +62,7 @@ namespace Contact_Tracing_App__Meria
                 if (result != null)
                 {
                     txtBox.Text = result.ToString();
-
-                    
+                    //Timer.Stop();
                 }
             }
         }
