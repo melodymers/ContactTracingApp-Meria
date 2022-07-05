@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace Contact_Tracing_App__Meria
         public GenQr()
         {
             InitializeComponent();
+        }
+
+        private void lblOnly_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenerateBtn_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(txtBox.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            picGen.Image = code.GetGraphic(5);
         }
     }
 }

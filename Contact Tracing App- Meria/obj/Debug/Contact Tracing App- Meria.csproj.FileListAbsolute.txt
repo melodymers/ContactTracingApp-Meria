@@ -53,3 +53,5 @@ C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\D
 C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.csproj.CopyComplete
 C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.exe
 C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact Tracing App- Meria.pdb
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\bin\Debug\QRCoder.dll
+C:\Users\Melody\Desktop\ContactTracingApp-Meria\Contact Tracing App- Meria\obj\Debug\Contact_Tracing_App__Meria.GenQr.resources
