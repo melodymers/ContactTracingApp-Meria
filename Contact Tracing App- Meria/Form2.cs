@@ -39,8 +39,6 @@ namespace Contact_Tracing_App__Meria
                 dox.WriteLine("-------------------");
                 dox.Close();
                 MessageBox.Show("THANK YOU FOR YOUR TIME", "COMPLETED");
-                Application.Exit();
-                MessageBox.Show("");
             }
         }
         private void tempTxtBx_TextChanged(object sender, EventArgs e)
@@ -128,6 +126,21 @@ namespace Contact_Tracing_App__Meria
 
         private void GenrBtn_Click(object sender, EventArgs e)
         {
+            if (nameTxtBx.Text == "" || AgeTxtBx.Text == "" || genderTxtBx.Text == "" || AddTxtBx.Text == "" || bdayTxtBx.Text == "" || tempTxtBx.Text == "" || inTxtBx.Text == "" || outTxtBx.Text == "" || vaxTxtBx.Text == "" || bstrTxtBx.Text == "")
+            {
+                MessageBox.Show("Please complete the form", "REQUIRED");
+            }
+            else
+            {
+                StreamWriter dox = new StreamWriter(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\generated.txt", true);
+                dox.WriteLine("FULL NAME: " + nameTxtBx.Text + ", " + "AGE: " + AgeTxtBx.Text + ", " + "GENDER: " + genderTxtBx.Text + ", " +
+                    "ADDRESS: " + AddTxtBx.Text + ", " + "BIRTH DATE: " + bdayTxtBx.Text + ", " + "TEMPERATURE: " + tempTxtBx.Text + ", " +
+                    "TIME IN: " + inTxtBx.Text + ", " + "TIME IN: " + inTxtBx.Text + ", " + "TIME OUT: " + outTxtBx.Text + ", " +
+                    "ARE YOU VACCINATED? " + vaxTxtBx.Text + ", " + "RECEIVED A BOOSTER? " + bstrTxtBx.Text + ", " + "DATE: " + SetDatePickr.Text);
+                dox.WriteLine("-------------------");
+                dox.Close();
+            }
+
             var GenQr = new GenQr();
             GenQr.Show();
             this.Hide();

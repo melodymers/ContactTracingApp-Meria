@@ -38,9 +38,9 @@
             // GenerateBtn
             // 
             this.GenerateBtn.Image = global::Contact_Tracing_App__Meria.Properties.Resources.generate2;
-            this.GenerateBtn.Location = new System.Drawing.Point(302, 571);
+            this.GenerateBtn.Location = new System.Drawing.Point(141, 554);
             this.GenerateBtn.Name = "GenerateBtn";
-            this.GenerateBtn.Size = new System.Drawing.Size(192, 79);
+            this.GenerateBtn.Size = new System.Drawing.Size(257, 106);
             this.GenerateBtn.TabIndex = 0;
             this.GenerateBtn.UseVisualStyleBackColor = true;
             this.GenerateBtn.Click += new System.EventHandler(this.GenerateBtn_Click);
@@ -58,12 +58,15 @@
             // 
             // picGen
             // 
+            this.picGen.BackColor = System.Drawing.Color.Transparent;
+            this.picGen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picGen.Location = new System.Drawing.Point(28, 32);
             this.picGen.Name = "picGen";
             this.picGen.Size = new System.Drawing.Size(466, 388);
-            this.picGen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picGen.TabIndex = 3;
             this.picGen.TabStop = false;
+            this.picGen.Click += new System.EventHandler(this.picGen_Click);
             // 
             // txtBox
             // 
@@ -72,6 +75,7 @@
             this.txtBox.Size = new System.Drawing.Size(466, 122);
             this.txtBox.TabIndex = 4;
             this.txtBox.Text = "";
+            this.txtBox.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
             // 
             // GenQr
             // 
