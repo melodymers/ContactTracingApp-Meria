@@ -18,7 +18,7 @@ namespace Contact_Tracing_App__Meria
         {
             InitializeComponent();
 
-                StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\generated.txt");
+                StreamReader reader = new StreamReader(@"C:\Users\Melody\source\repos\Contact Tracing App- Meria\INFORMATION CTAPP\all information\test.txt");
                 string all = reader.ReadToEnd();
                 txtBox.Text = all.ToString();
                 reader.Close();
